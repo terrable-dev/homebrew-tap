@@ -5,20 +5,20 @@
 class Terrable < Formula
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.3.0/terrable_Darwin_x86_64.tar.gz"
-      sha256 "46eca89c48b6caa720783beb7882fd3404abf1fd0b345282ad69a8f68f7f01f7"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.3.1/terrable_Darwin_x86_64.tar.gz"
+      sha256 "7cc496412c4a6166001f56dea49a91725ab6560099fc1bd794290d8d87d9d151"
 
       def install
         bin.install "terrable"
       end
     end
     on_arm do
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.3.0/terrable_Darwin_arm64.tar.gz"
-      sha256 "0ead11fa58f179b6d4ed62690464e288efad9063cd072a2d3825cf7cd2da5ed9"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.3.1/terrable_Darwin_arm64.tar.gz"
+      sha256 "6e036e6eb21b0c8ea5a261453283a154fea41f0a2dc6dce8380ba529e65c6048"
 
       def install
         bin.install "terrable"
@@ -29,8 +29,8 @@ class Terrable < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/terrable-dev/terrable/releases/download/v0.3.0/terrable_Linux_x86_64.tar.gz"
-        sha256 "558fd043d1f8316acef7addaf76e9a65cde4c14f79458e12166367636b5e4f70"
+        url "https://github.com/terrable-dev/terrable/releases/download/v0.3.1/terrable_Linux_x86_64.tar.gz"
+        sha256 "fb041ba449e35265c972a1bb28219f6b225133a8247b8309e18d4c46278afb58"
 
         def install
           bin.install "terrable"
@@ -39,8 +39,8 @@ class Terrable < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/terrable-dev/terrable/releases/download/v0.3.0/terrable_Linux_arm64.tar.gz"
-        sha256 "1af7eb6e08e6999b18727d0f1bda0b49e11dc136ede19994447f2c94dcfff5d6"
+        url "https://github.com/terrable-dev/terrable/releases/download/v0.3.1/terrable_Linux_arm64.tar.gz"
+        sha256 "34edbf625cb1b41eefff68d1bbcda0ca273e5ab04335c28b6ed565562a345055"
 
         def install
           bin.install "terrable"

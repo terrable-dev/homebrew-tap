@@ -5,20 +5,20 @@
 class Terrable < Formula
   desc ""
   homepage ""
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.5.0/terrable_Darwin_x86_64.tar.gz"
-      sha256 "2bb738ab53cbca233a2de5f5f2b230f41c5cd3e9ad482f9883587fe33fd814fb"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.6.0/terrable_Darwin_x86_64.tar.gz"
+      sha256 "d3336eee71eab95fcd3518011eb2fcbbd7bb7ee478af3334f19224121dc66fda"
 
       def install
         bin.install "terrable"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.5.0/terrable_Darwin_arm64.tar.gz"
-      sha256 "e3099eca5e954bf20785e2f41193fe3197d92d6cb90164374dc5bc3593875262"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.6.0/terrable_Darwin_arm64.tar.gz"
+      sha256 "dce94eed22beb014fab4b29085a7364e79700effc69c117fa92f6f3dcd5932cd"
 
       def install
         bin.install "terrable"
@@ -29,8 +29,8 @@ class Terrable < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/terrable-dev/terrable/releases/download/v0.5.0/terrable_Linux_x86_64.tar.gz"
-        sha256 "7904271ccd59960ccd88a22f20191be83b186b41a63726c9baca60d3242c3622"
+        url "https://github.com/terrable-dev/terrable/releases/download/v0.6.0/terrable_Linux_x86_64.tar.gz"
+        sha256 "819d06f8accc13d2a0c98e35f01f81bd204b185c55d6d97cb51340b0b2cf0d17"
 
         def install
           bin.install "terrable"
@@ -39,8 +39,8 @@ class Terrable < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/terrable-dev/terrable/releases/download/v0.5.0/terrable_Linux_arm64.tar.gz"
-        sha256 "49efebd7b79c45b95d9645a0a1ea021e0457fd80d139e479fd1f6b8cdb2b884a"
+        url "https://github.com/terrable-dev/terrable/releases/download/v0.6.0/terrable_Linux_arm64.tar.gz"
+        sha256 "b8f02f1aa33663f89fd3766904826acad3ce0043268515dbd483bae73c7ecbf5"
 
         def install
           bin.install "terrable"

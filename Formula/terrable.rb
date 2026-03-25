@@ -5,20 +5,20 @@
 class Terrable < Formula
   desc "CLI tool for running terrable terraform modules locally"
   homepage "https://github.com/terrable-dev/terrable"
-  version "0.12.2"
+  version "0.13.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.12.2/terrable_Darwin_x86_64.tar.gz"
-      sha256 "6d8ddebca8ae98484b6a793ccdd743ec0fb0c9bd7e9399cfb970dace8dde6b7d"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.13.0/terrable_Darwin_x86_64.tar.gz"
+      sha256 "c689cad87fdd2c48fabb0a493a579f4ed05be60740f87c83dd01fc98f9e89730"
 
       define_method(:install) do
         bin.install "terrable"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.12.2/terrable_Darwin_arm64.tar.gz"
-      sha256 "603e12382cd2dbbcbb343249cb9237172ce4bd97317d87d1d1510dc07ad8752c"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.13.0/terrable_Darwin_arm64.tar.gz"
+      sha256 "bc098897387969a7f4c613480d7d1731a1203cc3792551888981c92534683405"
 
       define_method(:install) do
         bin.install "terrable"
@@ -28,15 +28,15 @@ class Terrable < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.12.2/terrable_Linux_x86_64.tar.gz"
-      sha256 "baf916dfde2673d3ce6b751674a40f18f12b036c535ba63286d11ef2dad5bd9b"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.13.0/terrable_Linux_x86_64.tar.gz"
+      sha256 "4ffaa7db37f67a85fde7c407a9866138965b0420153a7b8f984820fd559dc09f"
       define_method(:install) do
         bin.install "terrable"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/terrable-dev/terrable/releases/download/v0.12.2/terrable_Linux_arm64.tar.gz"
-      sha256 "84bff724f0c74ee61c55cde8a3463ecba5508f1d4b8d312579c76773cdf7e4f7"
+      url "https://github.com/terrable-dev/terrable/releases/download/v0.13.0/terrable_Linux_arm64.tar.gz"
+      sha256 "31e7d8ccebe469e95c455c35a36cfdf89f09a8899a1122a517174f07fe16c26b"
       define_method(:install) do
         bin.install "terrable"
       end
